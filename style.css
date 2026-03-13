@@ -1,0 +1,30 @@
+/*
+Shelby
+March 12, 2026
+Changes: background color, font size, font, text indent.
+Header colors changed to brown. Header 1 font changed to Courier New.
+A brown 5-pixel bo border was also added.
+*/
+
+body {
+	background-color: #9FAF82;
+	border: 5px solid #5C4D33;
+	
+}
+
+h1 {
+	color: #5C4D33;
+	font-family: "Courier New", Arial, Georgia;
+	
+}
+
+h3 {
+	color: #5C4D33;
+	
+}
+
+p {
+  font-size: 14pt;
+  font-family: "Arial", Comic Sans MS, san-serif;
+  text-indent: .25in;
+}
