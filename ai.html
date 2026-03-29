@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ai.html</title>
+    <style>
+        /* Fall-themed Vintage Color Scheme */
+        :root {
+            --vintage-paper: #f4ecd8; 
+            --deep-mahogany: #4a2c2a; 
+            --rust-brown: #8b4513;    
+            --sepia-text: #2e241f;    
+            --gold-accent: #c5a059;
+            --ticket-yellow: #e9d7a5;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* Added a subtle radial gradient to simulate aged paper edges */
+            background: radial-gradient(circle, var(--vintage-paper) 70%, #e0d5ba 100%);
+            color: var(--sepia-text);
+            /* Decorative border around the entire viewport */
+            border: 15px double var(--deep-mahogany);
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: var(--deep-mahogany);
+            color: var(--vintage-paper);
+            text-align: center;
+            padding: 3.5rem 1rem;
+            border-bottom: 8px double var(--gold-accent);
+        }
+
+        header h1 {
+            font-variant: small-caps;
+            letter-spacing: 4px;
+            margin: 0;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-style: italic;
+            color: var(--gold-accent);
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 320px;
+            padding: 20px;
+        }
+
+        /* The Vintage Photo */
+        .titanic-img {
+            float: left;
+            width: 320px;
+            margin: 0 25px 20px 0;
+            padding: 12px 12px 45px 12px; /* Bottom heavy for 'Polaroid' look */
+            background: #fffef0;
+            border: 1px solid #d4c4a8;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+            transform: rotate(-1.5deg);
+        }
+
+        h2 {
+            color: var(--rust-brown);
+            border-bottom: 2px solid var(--gold-accent);
+            padding-bottom: 10px;
+            font-family: 'Times New Roman', serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Elegant Drop Cap */
+        .column p:first-of-type::first-letter {
+            float: left;
+            font-size: 4rem;
+            line-height: 3rem;
+            padding-top: 4px;
+            padding-right: 8px;
+            padding-left: 3px;
+            font-family: 'Times New Roman', serif;
+            color: var(--deep-mahogany);
+        }
+
+        footer {
+            background-color: var(--deep-mahogany);
+            color: var(--vintage-paper);
+            text-align: center;
+            padding: 2.5rem 0;
+            border-top: 8px double var(--gold-accent);
+            margin-top: auto;
+        }
+
+        /* Boarding Pass Style Button */
+        .btn-ticket {
+            display: inline-block;
+            background-color: var(--ticket-yellow);
+            color: var(--deep-mahogany);
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 2px dashed var(--deep-mahogany);
+            border-radius: 4px;
+            margin-top: 15px;
+            transition: transform 0.2s, background-color 0.2s;
+            font-family: 'Courier New', Courier, monospace; /* To look like a stamp/typewriter */
+        }
+
+        .btn-ticket:hover {
+            background-color: var(--gold-accent);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            body { border: 5px solid var(--deep-mahogany); }
+            .column { min-width: 100%; }
+            .titanic-img { 
+                float: none; 
+                display: block; 
+                margin: 0 auto 20px auto; 
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Legacy of the RMS Titanic</h1>
+        <p>White Star Line &bull; Official Commemorative Record</p>
+    </header>
+
+    <div class="container">
+        <div class="column">
+            <h2>The Unsinkable Ambition</h2>
+            
+            <img src="titanic_sepia.png" alt="RMS Titanic Vintage Photo" class="titanic-img">
+            
+            <p>The RMS Titanic was conceived by the White Star Line as a marvel of Edwardian engineering and luxury. Built in Belfast at the Harland and Wolff shipyard, it was designed to be the largest and most opulent moving object ever created by man. With its grand staircase, Turkish baths, and Parisian-style cafes, the ship was intended to provide a level of comfort that rivaled the finest hotels on land, catering specifically to the world’s wealthiest elite.</p>
+            
+            <p>Despite its reputation for luxury, the Titanic was also a symbol of technological progress. It featured sixteen watertight compartments and a sophisticated remote control system for its doors, leading many to believe the vessel was "practically unsinkable." This sense of security influenced several critical decisions, including the choice to carry only enough lifeboats for roughly half the people on board, as the deck space was prioritized for aesthetics.</p>
+            
+            <p>On April 10, 1912, the Titanic set sail from Southampton on its maiden voyage to New York City. The departure was a grand event, with thousands of spectators watching the massive hull pull away from the docks. For the passengers in third class, many of whom were immigrants seeking a new life in America, the ship represented hope and a fresh start, unaware of the maritime disaster that would soon redefine history.</p>
+        </div>
+
+        <div class="column">
+            <h2>The Fateful Encounter</h2>
+            <p>The voyage proceeded smoothly until the night of April 14, 1912. Despite receiving multiple warnings about icebergs in the North Atlantic, the ship continued at high speed through the frigid waters. At approximately 11:40 PM, lookouts spotted an iceberg directly ahead. The crew attempted to turn the ship sharply, but the iceberg struck the starboard side, buckling the hull plates and opening five of the watertight compartments to the sea.</p>
+            
+            <p>As the ship began to list and sink by the bow, the reality of the situation set in. The evacuation was marred by confusion and the strict adherence to the "women and children first" protocol. Because the crew had never conducted a full-scale lifeboat drill, many boats were lowered partially empty. The icy temperature of the water—roughly 28°F—meant that those who did not make it onto a boat had very little chance of survival once the ship disappeared beneath the waves.</p>
+            
+            <p>The Titanic found its final resting place on the ocean floor, over 12,000 feet deep. It wasn't until 1985 that the wreck was finally discovered by a joint French-American expedition. Today, the site serves as a somber memorial and a site of intense scientific study. The story of the Titanic continues to captivate the public imagination, serving as a cautionary tale about human hubris and the unpredictable power of nature.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Maritime History Archives</p>
+        <a href="https://rmstitanicinc.com/exhibitions/titanic-las-vegas/" class="btn-ticket" target="_blank">View Exhibition Boarding Pass</a>
+    </footer>
+
+</body>
+</html>
